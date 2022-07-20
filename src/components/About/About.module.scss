@@ -1,0 +1,41 @@
+.container {
+  margin-top: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .circle {
+    width: 40em;
+    height: 40em;
+    background: linear-gradient(70deg, rgb(119, 0, 0), orange);
+    border-radius: 50%;
+  }
+
+  .blur {
+    position: fixed;
+    top: 30em;
+    margin: 0 auto;
+    backdrop-filter: blur(2em);
+    padding: 2em;
+    max-width: 60%;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 1em 0 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    .blur {
+      max-width: 40%;
+    }
+  }
+}
