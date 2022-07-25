@@ -1,5 +1,6 @@
 .container {
   margin-top: 15em;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,35 +8,42 @@
   .circle {
     width: 40em;
     height: 40em;
-    background: linear-gradient(70deg, rgb(119, 0, 0), orange);
+    background: linear-gradient(70deg, rgb(0, 0, 0), rgb(36, 27, 139), rgb(114, 111, 211), rgb(203, 198, 241));
+    // background: linear-gradient(70deg, rgb(119, 0, 0), orange);
     border-radius: 50%;
+    animation: 10s ease-in 1s reverse both running fly;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fly { 
+    0% { 
+      margin-top: 0em;
+      width: 40em;
+      height: 40em;
+    } 
+    25% {
+      margin-right: 5em;
+      width: 20em;
+      height: 30em;
+    }
+    50% {
+      margin-top: 10em;
+      width: 30em;
+      height: 20em;
+    } 
+    75% {
+      margin-left: 10em;
+      width: 50em;
+      height: 50em;
+    } 
   }
 
   .blur {
     position: fixed;
-    top: 30em;
+    top: 0;
     margin: 0 auto;
     backdrop-filter: blur(2em);
-    padding: 2em;
-    max-width: 60%;
-  }
-
-  h2 {
-    font-size: 2em;
-    font-weight: 900;
-  }
-
-  p {
-    font-size: 1.3em;
-    font-weight: 500;
-    margin: 1em 0 0 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    .blur {
-      max-width: 40%;
-    }
+    min-width: 100%;
+    height: 100%;
   }
 }
