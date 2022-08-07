@@ -1,10 +1,11 @@
-$text_color: #f0f0f0;
+$text_color: #353535;
+$shadow: rgba(0, 0, 0, 0.25);
 
 .blur {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 1000;
   width: 100%;
   backdrop-filter: blur(5px);
 }
@@ -23,23 +24,19 @@ $text_color: #f0f0f0;
     font-family: 'Abril Fatface', cursive;
   }
 
-  p {
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-
   a {
     color: $text_color;
     text-decoration: none;
     margin: 0 0 0 1.5em;
-    font-size: 1.2em;
+    font-size: 1em;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
+    padding: 0.5em 1em;
+    border-radius: 50vh;
+    transition: 0.2s;
 
     &:hover {
-      text-decoration: line-through;
-      transition: 10s;
+      box-shadow: 0 5px 10px $shadow;
     }
   }
 }
