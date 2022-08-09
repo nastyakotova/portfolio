@@ -13,6 +13,7 @@ export default function App() {
           <Route path="/portfolio" element={<Main />}>
             <Route index element={<About />} />
             <Route path="/portfolio/work" element={<Portfolio />} />
+            <Route path="*" element={<About />} />
           </Route>
         </Routes>
     </Provider>
