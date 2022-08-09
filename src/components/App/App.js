@@ -10,9 +10,9 @@ export default function App() {
   return (
     <Provider store={store}>
       <Routes>
-          <Route path="/" element={<Main />}>
+          <Route path="/portfolio" element={<Main />}>
             <Route index element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/" element={<Portfolio />} />
           </Route>
         </Routes>
     </Provider>

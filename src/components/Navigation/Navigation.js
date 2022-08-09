@@ -15,8 +15,8 @@ export default function Navigation() {
           <p>Frontend Разработчик</p>
         </div>
         <div>
-          <Link to="/">Обо мне</Link>
-          <Link to="/portfolio">Портфолио</Link>
+          <Link to="/portfolio">Обо мне</Link>
+          <Link to="/">Портфолио</Link>
           <a
             href="/"
             onClick={(event) => {
