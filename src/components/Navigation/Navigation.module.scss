@@ -13,6 +13,7 @@ $shadow: rgba(0, 0, 0, 0.25);
 .navigation {
   color: $text_color;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 8rem;
@@ -37,6 +38,28 @@ $shadow: rgba(0, 0, 0, 0.25);
 
     &:hover {
       box-shadow: 0 5px 10px $shadow;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navigation {
+    flex-direction: column;
+    height: 12.5rem;
+    margin: 0 1em;
+
+    h1 {
+      margin-top: 0.2em;
+    }
+  
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        margin-bottom: 0.2em;
+      }
     }
   }
 }

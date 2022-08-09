@@ -8,3 +8,12 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .container {  
+    .outlet {
+      margin-top: 14.5em;
+      padding: 0 1em;
+    }
+  }
+}

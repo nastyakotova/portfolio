@@ -2,7 +2,7 @@ $text_color: #353535;
 $shadow: rgba(0, 0, 0, 0.25);
 
 @keyframes ani {
-  0% {transform: translateX(100%);}
+  0% {transform: translateX(-100%);}
   100% {transform: translateY(0);}
 }
 
@@ -15,7 +15,7 @@ $shadow: rgba(0, 0, 0, 0.25);
   margin: 0 auto;
   padding: 3em;
   border-radius: 1em;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   animation: ani 1s forwards;
   margin-bottom: 3em;
 
@@ -43,7 +43,6 @@ $shadow: rgba(0, 0, 0, 0.25);
 
   p {
     margin-bottom: 1em;
-
   }
 
   h4 {
@@ -62,5 +61,19 @@ $shadow: rgba(0, 0, 0, 0.25);
 
   img {
     margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 1em;
+  
+    h2 {
+      font-size: 1.2em;
+    }
+  
+    hr {
+      margin: 1em 0;
+    }
   }
 }

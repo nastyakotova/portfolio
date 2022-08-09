@@ -88,3 +88,37 @@ $shadow: rgba(0, 0, 0, 0.25);
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 1em;
+  
+    .about {
+      flex-direction: column-reverse;
+    
+      .text {
+        margin-right: 0;
+    
+        h2 {
+          margin-top: 2em;
+          font-size: 1em;
+        }
+    
+        p {
+          margin: 2em 0;
+        }
+      }
+    
+      .img {
+        width: 10em;
+      }
+    }
+  
+    hr {
+      margin: 3em 0;
+    }
+  
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+}

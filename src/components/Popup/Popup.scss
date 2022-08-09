@@ -22,7 +22,6 @@ $color_1: #FFFFFF;
   }
 
   .content {
-    min-width: 375px;
     max-height: 100%;
     border-radius: 2em;
     background-color: $color_1;
@@ -35,5 +34,11 @@ $color_1: #FFFFFF;
   
   .content.active {
     transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content {
+    width: 90%;
   }
 }
