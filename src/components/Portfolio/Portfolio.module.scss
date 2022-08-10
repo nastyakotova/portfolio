@@ -13,32 +13,26 @@ $shadow: rgba(0, 0, 0, 0.25);
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 3em;
-  border-radius: 1em;
   transform: translateX(-100%);
   animation: ani 1s forwards;
-  margin-bottom: 3em;
-
-  &:hover {
-    box-shadow: 0 5px 10px $shadow;
-  }
+  margin-bottom: 10em;
 
   h2 {
-    font-size: 2em;
+    font-size: 4em;
     font-weight: 800;
     margin-bottom: 0.5em;
     text-transform: uppercase;
   }
 
   hr {
-    width: 100%;
-    margin: 3em 0;
+    margin: 3em 0 10em 0;
   }
 
   h3 {
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: 2em;
+    font-weight: 800;
     margin-bottom: 1em;
+    text-transform: uppercase;
   }
 
   p {
@@ -46,16 +40,19 @@ $shadow: rgba(0, 0, 0, 0.25);
   }
 
   h4 {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     font-weight: 600;
   }
 
   ol {
-    list-style: circle;
-    margin-left: 2em;
-
     li {
       margin-bottom: 1em;
+      background-image: url('https://cdn.icon-icons.com/icons2/2406/PNG/512/code_tags_html_inline_icon_145999.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 25px;
+      padding-left: 40px;
+      padding-top: 3px;
     }
   }
 

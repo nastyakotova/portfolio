@@ -20,9 +20,17 @@ export default function Contacts() {
       <p>Электронная почта: nastya-kotikm@yandex.ru</p>
       <p>Телефон: +7 (966) 184 58 88</p>
       <div className={styles.container}>
-        <a href="https://t.me/KotovaAnastasia">Telegram</a>
-        <a href="https://www.linkedin.com/in/anastasia-%D0%BA%D0%BE%D1%82%D0%BE%D0%B2%D0%B0-038976242">LinkedIn</a>
-        <a href="https://spb.hh.ru/applicant/resumes/view?resume=e14322d5ff07d471110039ed1f4d47646d7473">HeadHunter</a>
+        <a 
+          href="https://t.me/KotovaAnastasia" 
+          target="_blank"
+          rel="noreferrer">Telegram</a>
+        <a
+          href="https://www.linkedin.com/in/anastasia-%D0%BA%D0%BE%D1%82%D0%BE%D0%B2%D0%B0-038976242" target="_blank"
+          rel="noreferrer">LinkedIn</a>
+        <a
+          href="https://spb.hh.ru/applicant/resumes/view?resume=e14322d5ff07d471110039ed1f4d47646d7473"
+          target="_blank"
+          rel="noreferrer">HeadHunter</a>
       </div>
     </>
   );

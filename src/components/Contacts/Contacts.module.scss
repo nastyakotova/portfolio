@@ -43,6 +43,7 @@ p {
     padding: 0.5em 1em;
     border-radius: 50vh;
     transition: 0.2s;
+    border: 1px solid;
   
     &:hover {
       box-shadow: 0 5px 10px $shadow;

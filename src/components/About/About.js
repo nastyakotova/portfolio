@@ -10,7 +10,7 @@ export default function About() {
     <div className={styles.container}>
       <div className={styles.about}>
         <div className={styles.text}>
-          <h2>Привет! Я Анастасия,<br />Frontend разработчик<br />из Санкт-Петербурга</h2>
+          <h2>Frontend<br />Developer</h2>
           <p>React Redux HTML CSS Sass</p>
           <a
             href="/"
@@ -19,7 +19,7 @@ export default function About() {
                 dispatch(getContentType('contacts'));
                 dispatch(activatePopup());
               }}
-          >Есть проект? Напиши мне!</a>
+          >Let's talk</a>
         </div>
         <img
           className={styles.img}
@@ -29,14 +29,15 @@ export default function About() {
 
       <hr />
 
-      <h2>О себе</h2>
-      <p>Я Frontend разработчик с опытом более 1.5 лет. Имею высокий уровень владения JavaScript и большой опыт работы в команде. Занималась разработкой комерческих web-приложений с нуля до MVP версии, настраивала взаимодействие client-server, разрабатывала пользовательский интерфейс на React.</p>
+      <h2>Обо мне</h2>
+      <p>Я Frontend разработчик с опытом более 1.5 лет. Познакомилась с IT в университете и занялась коммерческой разработкой во время последнего курса. Мне полюбился JavaScript из-за динамики front-end направления и широких возможностей языка. Имею высокий уровень владения JavaScript и большой опыт работы в команде. Занималась разработкой коммерческих web-приложений с нуля до MVP версии, настраивала взаимодействие client-server, разрабатывала пользовательский интерфейс на React.</p>
+      <p>Ищу работу в компании с открытой культурой общения и здоровой атмосферой внутри команды, чтобы разрабатывать перспективные проекты с использованием передового стека технологий.</p>
       <hr />
 
       <h2>Мой стек</h2>
       <ol>
-        <li>Frontend: React, Redux(Thunk, Saga), HTML, CSS, SASS, Material UI;</li>
-        <li>Backend: NodeJS, Express, Postgress;</li>
+        <li>Frontend: React, Redux, HTML, CSS, SASS, Material UI;</li>
+        <li>Backend: NodeJS, Express, Postgress, Sequelize;</li>
         <li>Testing: Jest;</li>
         <li>Git, GitHub, VS Code, Jira, Trello, Figma;</li>
       </ol>

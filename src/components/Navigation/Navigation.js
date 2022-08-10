@@ -12,7 +12,6 @@ export default function Navigation() {
       <nav className={styles.navigation}>
         <div>
           <h1>Anastasia.</h1>
-          <p>Frontend Разработчик</p>
         </div>
         <div>
           <Link to="/portfolio">Обо мне</Link>
