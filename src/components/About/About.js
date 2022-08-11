@@ -36,17 +36,35 @@ export default function About() {
 
       <h2>Мой стек</h2>
       <ol>
-        <li>Frontend: React, Redux, HTML, CSS, SASS, Material UI;</li>
-        <li>Backend: NodeJS, Express, Postgress, Sequelize;</li>
-        <li>Testing: Jest;</li>
-        <li>Git, GitHub, VS Code, Jira, Trello, Figma;</li>
+        <li>
+          <img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/code_tags_html_inline_icon_145999.png" alt="" />
+          Frontend: React, Redux, HTML, CSS, SASS, Material UI;
+        </li>
+        <li>
+          <img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/code_tags_html_inline_icon_145999.png" alt="" />
+          Backend: NodeJS, Express, Postgress, Sequelize;
+        </li>
+        <li>
+          <img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/code_tags_html_inline_icon_145999.png" alt="" />
+          Testing: Jest;
+        </li>
+        <li>
+          <img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/code_tags_html_inline_icon_145999.png" alt="" />
+          Git, GitHub, VS Code, Jira, Trello, Figma;
+        </li>
       </ol>
       <hr />
 
       <h2>Краткосрочные цели</h2>
       <ol>
-        <li>Изучить TypeScript и MobX;</li>
-        <li>Написать приложение на Next JS;</li>
+        <li>
+          <img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/code_tags_html_inline_icon_145999.png" alt="" />
+          Изучить TypeScript и MobX;
+        </li>
+        <li>
+          <img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/code_tags_html_inline_icon_145999.png" alt="" />
+          Написать приложение на Next JS;
+        </li>
       </ol>
 
       <hr />

@@ -14,10 +14,18 @@ $background: #353535;
       font-size: 3rem;
       padding-left: 1.5em;
       font-family: 'Abril Fatface', cursive;
-      background-image: url('https://svgur.com/i/jxo.svg');
-      background-repeat: no-repeat;
-      background-position: left start;
+      // background-image: url('https://svgur.com/i/jxo.svg');
+      // background-repeat: no-repeat;
+      // background-position: left start;
       background-size: 50px;
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 50px;
+        left: 0;
+        top: 0;
+      }
     }
 
     .links {

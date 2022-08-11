@@ -80,18 +80,24 @@ $shadow: rgba(0, 0, 0, 0.25);
 
   ol li {
       margin-bottom: 1em;
-      background-image: url('https://cdn.icon-icons.com/icons2/2406/PNG/512/code_tags_html_inline_icon_145999.png');
-      background-repeat: no-repeat;
-      background-position: left center;
       background-size: 25px;
       padding-left: 40px;
       padding-top: 3px;
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 25px;
+        left: 0;
+        top: 0;
+      }
   }
 }
 
 @media only screen and (max-width: 767px) {
   .container {
       margin-bottom: 70px;
+      animation: none;
 
     .about {
       flex-direction: column-reverse;

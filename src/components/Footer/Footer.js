@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.info}>
-        <h2>Anastasia.</h2>
+        <h2><img src="https://svgur.com/i/jxo.svg" alt="text" />Anastasia.</h2>
         <div className={styles.links}>
           <a
             href="https://t.me/KotovaAnastasia"
