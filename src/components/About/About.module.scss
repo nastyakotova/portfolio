@@ -17,6 +17,7 @@ $shadow: rgba(0, 0, 0, 0.25);
   .about {
     display: flex;
     justify-content: space-between;  
+    flex-wrap: wrap;
   
     .text {
       margin-right: 3em;
@@ -46,6 +47,7 @@ $shadow: rgba(0, 0, 0, 0.25);
         padding: 0.5em 1em;
         border: 1px solid;
         width: 8.3em;
+        margin-bottom: 1em;
     
         &:hover {
           transform: translateY(-5px);
@@ -73,10 +75,10 @@ $shadow: rgba(0, 0, 0, 0.25);
 
   p {
     line-height: 1.5em;
+    margin-bottom: 2em;
   }
 
-  ol {
-    li {
+  ol li {
       margin-bottom: 1em;
       background-image: url('https://cdn.icon-icons.com/icons2/2406/PNG/512/code_tags_html_inline_icon_145999.png');
       background-repeat: no-repeat;
@@ -84,41 +86,70 @@ $shadow: rgba(0, 0, 0, 0.25);
       background-size: 25px;
       padding-left: 40px;
       padding-top: 3px;
-    }
   }
 }
 
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 1em;
-  
+      margin-bottom: 70px;
+
     .about {
       flex-direction: column-reverse;
+      width: 100%;
+      padding: 0;
     
       .text {
         margin-right: 0;
+        margin-top: 150px;
+        margin-bottom: 30px;
     
         h2 {
-          margin-top: 2em;
-          font-size: 1em;
+          margin-top: -103px;
+          font-size: 2em;
+          width: 100%;
+          margin-left: 0;
+          margin-left: 0.5em;
         }
     
         p {
-          margin: 2em 0;
+          margin: 2em 1em;
+          white-space: normal;
+        }
+
+        a {
+          margin-left: 1em;
+
+          &:hover {
+            transform: none;
+            box-shadow: none;
+          }
         }
       }
-    
+      
       .img {
-        width: 10em;
+        width: 100%;
       }
     }
   
     hr {
-      margin: 3em 0;
+      margin: 2em 1em;
     }
   
     h2 {
-      font-size: 1.2em;
+      font-size: 1.5em;
+      margin-top: 50px;
+      padding: 0;
+      margin-left: 0.5em;
+    }
+
+    p {
+      white-space: normal;
+      margin: 0 1em 2em 1em;
+    }
+
+    ol li {
+      margin: 1em;
+      white-space: normal;
     }
   }
 }

@@ -7,7 +7,7 @@ export default function Contacts() {
   const dispatch = useDispatch();
 
   return (
-    <>
+    <><div>
       <h2 className={styles.header}>Контакты</h2>
       <a
         className={styles.closeButton}
@@ -17,11 +17,9 @@ export default function Contacts() {
           dispatch(deactivatePopup());
         })}
       >X</a>
-      <p>Электронная почта: nastya-kotikm@yandex.ru</p>
-      <p>Телефон: +7 (966) 184 58 88</p>
-      <div className={styles.container}>
-        <a 
-          href="https://t.me/KotovaAnastasia" 
+    </div><p>Электронная почта: nastya-kotikm@yandex.ru</p><p>Телефон: +7 (966) 184-58-88</p><div className={styles.container}>
+        <a
+          href="https://t.me/KotovaAnastasia"
           target="_blank"
           rel="noreferrer">Telegram</a>
         <a
@@ -31,7 +29,6 @@ export default function Contacts() {
           href="https://spb.hh.ru/applicant/resumes/view?resume=e14322d5ff07d471110039ed1f4d47646d7473"
           target="_blank"
           rel="noreferrer">HeadHunter</a>
-      </div>
-    </>
+      </div></>
   );
 }

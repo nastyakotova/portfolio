@@ -8,24 +8,24 @@ export default function Navigation() {
   const dispatch = useDispatch();
 
   return (
+    <>
     <div className={styles.blur}>
       <nav className={styles.navigation}>
-        <div>
-          <h1>Anastasia.</h1>
-        </div>
-        <div>
-          <Link to="/portfolio">Обо мне</Link>
-          <Link to="/portfolio/work">Портфолио</Link>
-          <a
+        <h1>Anastasia.</h1>
+        <div className={styles.contacts}>
+          <Link to="/portfolio" className={styles.contacts__link}>Обо мне</Link>
+          <Link to="/portfolio/work" className={styles.contacts__link}>Портфолио</Link>
+          <a className={styles.contacts__link}
             href="/"
             onClick={(event) => {
               event.preventDefault();
               dispatch(getContentType('contacts'));
               dispatch(activatePopup());
-            }}
+            } }
           >Контакты</a>
         </div>
       </nav>
     </div>
+    </>
   );
 }

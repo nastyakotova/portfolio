@@ -16,7 +16,6 @@ $shadow: rgba(0, 0, 0, 0.25);
   border-radius: 50vh;
   transition: 0.2s;
   width: 2em;
-  height: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,5 +60,9 @@ p {
       flex-direction: column;
       margin-bottom: 0.2em;
     }
+  }
+
+  .info {
+    align-items: center;
   }
 }

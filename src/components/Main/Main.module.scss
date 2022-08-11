@@ -3,6 +3,7 @@
   flex-direction: column;
   position: relative;
   width: 100%;
+  align-items: center;
 
   .outlet {
     margin-top: 12em;
@@ -14,8 +15,8 @@
 @media only screen and (max-width: 767px) {
   .container {  
     .outlet {
-      margin-top: 14.5em;
-      padding: 0 1em;
+      margin-top: 50px;
+      padding: 0;
     }
   }
 }
