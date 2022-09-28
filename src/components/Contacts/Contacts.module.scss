@@ -21,7 +21,7 @@ $shadow: rgba(0, 0, 0, 0.25);
   align-items: center;
   
   &:hover {
-    box-shadow: 0 5px 10px rgba(67, 67, 67, 0.25);
+    color: $text_color;
   }
 }
 
@@ -30,17 +30,16 @@ p {
 }
 
 .container {
-  margin-top: 2em;
+  margin-top: 4em;
   
   a {
     color: $text_color;
     text-decoration: none;
-    margin: 0 0 0 1.5em;
+    margin:  0 0.7em;
     font-size: 1em;
     text-transform: uppercase;
     font-weight: 400;
     padding: 0.5em 1em;
-    border-radius: 50vh;
     transition: 0.2s;
     border: 1px solid;
   

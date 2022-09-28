@@ -1,4 +1,3 @@
-// import styles from './App.module.scss';
 import { Provider } from "react-redux";
 import { Routes, Route } from 'react-router-dom';
 import store from "../../store";

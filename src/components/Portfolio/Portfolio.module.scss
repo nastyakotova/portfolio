@@ -6,6 +6,12 @@ $shadow: rgba(0, 0, 0, 0.25);
   100% {transform: translateY(0);}
 }
 
+@keyframes shadowRotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -16,12 +22,23 @@ $shadow: rgba(0, 0, 0, 0.25);
   transform: translateX(-100%);
   animation: ani 1s forwards;
   margin-bottom: 10em;
+  position: relative;
+
+  .ellipse {
+    position: absolute;
+    z-index: -1;
+    width: 2000px;
+    top: -500px;
+    left: -600px;
+    // animation: shadowRotate 10s linear infinite;
+  }
 
   h2 {
     font-size: 4em;
     font-weight: 800;
     margin-bottom: 0.5em;
     text-transform: uppercase;
+    border-left: solid 1px;
   }
 
   hr {
@@ -44,15 +61,17 @@ $shadow: rgba(0, 0, 0, 0.25);
     font-weight: 600;
   }
 
-  ol {
-    li {
-      margin-bottom: 1em;
-      background-image: url('https://svgur.com/i/jym.svg');
-      background-repeat: no-repeat;
-      background-position: left center;
-      background-size: 25px;
-      padding-left: 40px;
+  a {
+    color: $text_color;
+    font-weight: 600;
+
+    &:hover {
+      color: #707070;
     }
+  }
+
+  ol li {
+      margin-bottom: 1em;
   }
 
   img {
@@ -79,6 +98,10 @@ $shadow: rgba(0, 0, 0, 0.25);
 
     h3 {
       font-size: 1.2em;
+    }
+
+    .ellipse {
+      display: none;
     }
   }
 }

@@ -6,6 +6,12 @@ $shadow: rgba(0, 0, 0, 0.25);
   100% {transform: translateY(0);}
 }
 
+@keyframes shadowRotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1400px;
@@ -18,6 +24,7 @@ $shadow: rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-between;  
     flex-wrap: wrap;
+    position: relative;
   
     .text {
       margin-right: 3em;
@@ -29,6 +36,7 @@ $shadow: rgba(0, 0, 0, 0.25);
         font-weight: 800;
         margin-bottom: 0.5em;
         text-transform: uppercase;
+        border-left: solid 1px;
       }
   
       p {
@@ -42,7 +50,6 @@ $shadow: rgba(0, 0, 0, 0.25);
         text-transform: uppercase;
         font-size: 1em;
         font-weight: 400;
-        border-radius: 50vh;
         transition: 0.2s;
         padding: 0.5em 1em;
         border: 1px solid;
@@ -51,14 +58,26 @@ $shadow: rgba(0, 0, 0, 0.25);
     
         &:hover {
           transform: translateY(-5px);
-          box-shadow: 0 5px 10px $shadow;
         }
       }
     }
   
     .img {
       width: 24em;
+      height: 24em;
       filter: grayscale(100%);
+      border-bottom: solid 1px;
+      border-left: solid 1px;
+      padding: 0 0 3em 3em;
+    }
+
+    .ellipse {
+      position: absolute;
+      z-index: -1;
+      width: 2000px;
+      top: -500px;
+      left: -600px;
+      // animation: shadowRotate 10s linear infinite;
     }
   }
 
@@ -71,6 +90,7 @@ $shadow: rgba(0, 0, 0, 0.25);
     font-weight: 800;
     margin-bottom: 1em;
     text-transform: uppercase;
+    border-left: solid 1px;
   }
 
   p {
@@ -80,12 +100,6 @@ $shadow: rgba(0, 0, 0, 0.25);
 
   ol li {
     margin-bottom: 1em;
-    background-image: url('https://svgur.com/i/jym.svg');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 25px;
-    padding-left: 40px;
-    padding-top: 3px;
   }
 }
 
@@ -130,6 +144,13 @@ $shadow: rgba(0, 0, 0, 0.25);
       
       .img {
         width: 100%;
+        height: auto;
+        border: none;
+        padding: 0;
+      }
+
+      .ellipse {
+        display: none;
       }
     }
   

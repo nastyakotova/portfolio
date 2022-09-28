@@ -12,34 +12,23 @@ $background: #353535;
 
     h2 {
       font-size: 3rem;
-      padding-left: 1.5em;
       font-family: 'Abril Fatface', cursive;
-      background-image: url('https://svgur.com/i/jxo.svg');
-      background-repeat: no-repeat;
-      background-position: left start;
-      background-size: 50px;
     }
 
     .links {
       display: flex;
       flex-direction: column;
+      align-items: flex-end;
+      border-right: solid 1px;
+      padding-right: 0.5em;
 
       a {
         color: white;
-        display: inline-block;
         text-decoration: none;
         margin: 1em 0;
         font-size: 1em;
         text-transform: uppercase;
         font-weight: 400;
-        position: relative;
-
-        img {
-          width: 35px;
-          position: absolute;
-          top: -10px;
-          left: -50px;
-        }
       }
     }
   }
